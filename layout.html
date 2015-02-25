@@ -13,139 +13,137 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             Flex Layout
   *******************************/
 
-  [layout][horizontal], [layout][vertical] {
+  .layout.horizontal,
+  .layout.horizontal-reverse,
+  .layout.vertical,
+  .layout.vertical-reverse {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
   }
 
-  [layout][horizontal][inline], [layout][vertical][inline] {
+  .layout.inline {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
   }
 
-  [layout][horizontal] {
+  .layout.horizontal {
     -ms-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 
-  [layout][horizontal][reverse] {
+  .layout.horizontal-reverse {
     -ms-flex-direction: row-reverse;
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
-  [layout][vertical] {
+  .layout.vertical {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 
-  [layout][vertical][reverse] {
+  .layout.vertical-reverse {
     -ms-flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
-  [layout][wrap] {
+  .layout.wrap {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  [layout][wrap-reverse] {
+  .layout.wrap-reverse {
     -ms-flex-wrap: wrap-reverse;
     -webkit-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
 
-  [flex] {
-    -ms-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-  }
-
-  [flex][auto] {
+  .flex-auto {
     -ms-flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
   }
 
-  [flex][none] {
+  .flex-none {
     -ms-flex: none;
     -webkit-flex: none;
     flex: none;
   }
 
-  [flex][one] {
+  .flex,
+  .flex-1 {
     -ms-flex: 1;
     -webkit-flex: 1;
     flex: 1;
   }
 
-  [flex][two] {
+  .flex-2 {
     -ms-flex: 2;
     -webkit-flex: 2;
     flex: 2;
   }
 
-  [flex][three] {
+  .flex-3 {
     -ms-flex: 3;
     -webkit-flex: 3;
     flex: 3;
   }
 
-  [flex][four] {
+  .flex-4 {
     -ms-flex: 4;
     -webkit-flex: 4;
     flex: 4;
   }
 
-  [flex][five] {
+  .flex-5 {
     -ms-flex: 5;
     -webkit-flex: 5;
     flex: 5;
   }
 
-  [flex][six] {
+  .flex-6 {
     -ms-flex: 6;
     -webkit-flex: 6;
     flex: 6;
   }
 
-  [flex][seven] {
+  .flex-7 {
     -ms-flex: 7;
     -webkit-flex: 7;
     flex: 7;
   }
 
-  [flex][eight] {
+  .flex-8 {
     -ms-flex: 8;
     -webkit-flex: 8;
     flex: 8;
   }
 
-  [flex][nine] {
+  .flex-9 {
     -ms-flex: 9;
     -webkit-flex: 9;
     flex: 9;
   }
 
-  [flex][ten] {
+  .flex-10 {
     -ms-flex: 10;
     -webkit-flex: 10;
     flex: 10;
   }
 
-  [flex][eleven] {
+  .flex-11 {
     -ms-flex: 11;
     -webkit-flex: 11;
     flex: 11;
   }
 
-  [flex][twelve] {
+  .flex-12 {
     -ms-flex: 12;
     -webkit-flex: 12;
     flex: 12;
@@ -153,19 +151,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* alignment in cross axis */
 
-  [layout][start] {
-    -ms-flex-align: start;
+  .layout.start {
+    -msa-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
   }
 
-  [layout][center], [layout][center-center] {
+  .layout.center,
+  .layout.center-center {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
   }
 
-  [layout][end] {
+  .layout.end {
     -ms-flex-align: end;
     -webkit-align-items: flex-end;
     align-items: flex-end;
@@ -173,31 +172,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* alignment in main axis */
 
-  [layout][start-justified] {
+  .layout.start-justified {
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
   }
 
-  [layout][center-justified], [layout][center-center] {
+  .layout.center-justified,
+  .layout.center-center {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
   }
 
-  [layout][end-justified] {
+  .layout.end-justified {
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
 
-  [layout][around-justified] {
+  .layout.around-justified {
     -ms-flex-pack: around;
     -webkit-justify-content: space-around;
     justify-content: space-around;
   }
 
-  [layout][justified] {
+  .layout.justified {
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
@@ -205,25 +205,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* self alignment */
 
-  [self-start] {
+  .self-start {
     -ms-align-self: flex-start;
     -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 
-  [self-center] {
+  .self-center {
     -ms-align-self: center;
     -webkit-align-self: center;
     align-self: center;
   }
 
-  [self-end] {
+  .self-end {
     -ms-align-self: flex-end;
     -webkit-align-self: flex-end;
     align-self: flex-end;
   }
 
-  [self-stretch] {
+  .self-stretch {
     -ms-align-self: stretch;
     -webkit-align-self: stretch;
     align-self: stretch;
@@ -233,24 +233,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             Other Layout
   *******************************/
 
-  [block] {
+  .block {
     display: block;
   }
 
   /* ie support for hidden */
-  [hidden] {
+  .hidden {
     display: none !important;
   }
 
-  [invisible] {
+  .invisible {
     visibility: hidden !important;
   }
 
-  [relative] {
+  .relative {
     position: relative;
   }
 
-  [fit] {
+  .fit {
     position: absolute;
     top: 0;
     right: 0;
@@ -258,41 +258,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     left: 0;
   }
 
-  body[fullbleed] {
+  body.fullbleed {
     margin: 0;
     height: 100vh;
   }
 
-  [scroll] {
+  .scroll {
     -webkit-overflow-scrolling: touch;
     overflow: auto;
   }
 
   /* fixed position */
 
-  [fixed-top] {
+  .fixed-bottom,
+  .fixed-left,
+  .fixed-right
+  .fixed-top {
     position: fixed;
+  }
+
+  .fixed-top {
     top: 0;
     left: 0;
     right: 0;
   }
 
-  [fixed-right] {
-    position: fixed;
+  .fixed-right {
     top: 0;
     right: 0;
     botttom: 0;
   }
 
-  [fixed-bottom] {
-    position: fixed;
+  .fixed-bottom {
     right: 0;
     bottom: 0;
     left: 0;
   }
 
-  [fixed-left] {
-    position: fixed;
+  .fixed-left {
     top: 0;
     botttom: 0;
     left: 0;
