@@ -13,12 +13,5 @@
   ],
   "license": "https://polymer.github.io/LICENSE.txt",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "components",
-    "test",
-    "tests"
-  ]
+  "ignore": []
 }
