@@ -13,5 +13,8 @@
   ],
   "license": "https://polymer.github.io/LICENSE.txt",
   "private": true,
-  "ignore": []
+  "ignore": [],
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.8-preview",
+  }
 }
