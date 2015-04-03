@@ -15,6 +15,6 @@
   "private": true,
   "ignore": [],
   "dependencies": {
-    "polymer": "Polymer/polymer#0.8-preview",
+    "polymer": "Polymer/polymer#0.8-preview"
   }
 }
